@@ -12,6 +12,10 @@
 Thumbs.db
 UserInterfaceState.xcuserstate
 $RECYCLE.BIN/
+src/environments/firebase.config.ts
+theconapp.keystore.old
+theconapp.keystore
+google-services.json
 
 *.log
 log.txt
