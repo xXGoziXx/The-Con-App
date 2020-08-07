@@ -11,6 +11,9 @@
   },
   "cordova": {},
   "server": {
+    "allowNavigation": [
+      "192.168.1.8"
+    ],
     "url": "http://192.168.1.8:8100",
     "cleartext": true
   }
