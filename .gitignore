@@ -16,6 +16,7 @@ src/environments/firebase.config.ts
 theconapp.keystore.old
 theconapp.keystore
 google-services.json
+GoogleService-Info.plist
 
 *.log
 log.txt

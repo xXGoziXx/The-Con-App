@@ -10,9 +10,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { SidemenuComponent } from './sidemenu/sidemenu.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, SidemenuComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
@@ -20,11 +21,7 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ],
+  providers: [StatusBar, SplashScreen, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
